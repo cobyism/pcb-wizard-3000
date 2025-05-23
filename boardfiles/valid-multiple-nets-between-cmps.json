@@ -1,0 +1,12 @@
+{
+  "name": "Valid Basic Board",
+  "components": [
+    { "name": "R1", "pins": ["1", "2"] },
+    { "name": "C1", "pins": ["A", "B", "IN", "OUT"] }
+  ],
+  "nets": [
+    { "name": "GND", "pins": ["R1.1", "C1.A"] },
+    { "name": "VCC", "pins": ["R1.2"] },
+    { "name": "Data1", "pins": ["C1.IN", "R1.2"] }
+  ]
+}

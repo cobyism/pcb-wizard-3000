@@ -1,0 +1,33 @@
+{
+  "name": "Somewhat Complex Board",
+  "components": [
+    { "name": "R1", "pins": ["1", "2"] },
+    { "name": "C1", "pins": ["A", "B", "IN", "OUT"] },
+    { "name": "C2", "pins": ["A", "B", "IN", "OUT"] },
+    { "name": "C3", "pins": ["A", "B", "IN", "OUT"] },
+    { "name": "C4", "pins": ["A", "B", "IN", "OUT"] },
+    { "name": "C5", "pins": ["A", "B", "IN", "OUT"] },
+    { "name": "C6", "pins": ["A", "B", "IN", "OUT"] },
+    { "name": "C7", "pins": ["A", "B", "IN", "OUT"] },
+    { "name": "C8", "pins": ["A", "B", "IN", "OUT"] }
+  ],
+  "nets": [
+    { "name": "GND", "pins": ["R1.1", "C1.A"] },
+    { "name": "VCC", "pins": ["R1.2"] },
+    { "name": "Data1", "pins": ["C1.IN", "R1.2"] },
+    { "name": "Data2", "pins": ["C2.IN", "R1.2"] },
+    { "name": "Data3", "pins": ["C3.IN", "R1.2"] },
+    { "name": "Data4", "pins": ["C4.IN", "R1.2"] },
+    { "name": "Data5", "pins": ["C5.IN", "R1.2"] },
+    { "name": "Data6", "pins": ["C6.IN", "R1.2"] },
+    { "name": "Data7", "pins": ["C7.OUT", "C6.IN"] },
+    { "name": "Data8", "pins": ["C6.OUT", "C7.IN"] },
+    { "name": "Data9", "pins": ["C7.OUT", "C8.IN"] },
+    { "name": "Data10", "pins": ["C8.OUT", "C7.IN"] },
+    { "name": "Data11", "pins": ["C8.OUT", "C5.IN"] },
+    { "name": "Data12", "pins": ["C5.OUT", "C4.IN"] },
+    { "name": "Data13", "pins": ["C4.OUT", "C3.IN"] },
+    { "name": "Data14", "pins": ["C3.OUT", "C2.IN"] },
+    { "name": "Data15", "pins": ["C2.OUT", "C1.IN"] }
+  ]
+}

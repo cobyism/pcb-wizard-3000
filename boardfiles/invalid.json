@@ -1,0 +1,13 @@
+{
+  "name": "Invalid Board",
+  "components": [
+    { "name": "R1", "pins": ["", "2"] },
+    { "name": "C1", "pins": ["A", "B", "IN", "OUT"] },
+    { "name": "U1" }
+  ],
+  "nets": [
+    { "name": "GND", "pins": ["R1.1", "C1.A"] },
+    { "name": "VCC", "pins": ["R1.2"] }
+  ],
+  "extraField": "This field is not allowed"
+}

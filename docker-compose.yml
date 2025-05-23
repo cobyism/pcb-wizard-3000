@@ -1,0 +1,24 @@
+services:
+  backend:
+    build: ./server
+    environment:
+      - NODE_ENV=production
+      - DATABASE_URL=file:/data/dev.db
+      - JWT_SECRET=supersecret
+    volumes:
+      - ./server/prisma:/app/prisma
+      - db-data:/data
+    ports:
+      - "4000:4000"
+
+  frontend:
+    build: ./client
+    environment:
+      - NODE_ENV=production
+    ports:
+      - "4173:4173"
+    depends_on:
+      - backend
+
+volumes:
+  db-data:
