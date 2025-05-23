@@ -23,7 +23,7 @@ npm start
 cd client
 npm install
 npm run dev
-# Client app should be available at http://localhost:5137 in your browser
+# Client app should be available at http://localhost:5173 in your browser
 ```
 
 ### Using Docker Compose
@@ -33,5 +33,5 @@ Both the client and server have their own Dockerfiles, and a `docker-compose.yml
 ```sh
 docker-compose build
 docker-compose up
-# Open http://localhost:4137 in your browser
+# Open http://localhost:4173 in your browser
 ```
